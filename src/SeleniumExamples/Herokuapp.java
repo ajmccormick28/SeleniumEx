@@ -1,17 +1,17 @@
 	/*
-	 ****************************************************************
-	 *                                                              *
-	 *  Programmer: Andrew McCormick                                *
-	 *  Program:    HeroKuapp.java                                  *
-	 *  Package:    SeleniumExamples                                *  
-	 *  Last Edit:  3.24.2021                                       *
-	 *                                                              *
-	 *  This program uses herokaupp website to demonstrate multiple	* 
-	 *  Selenium tools in action.  Multiple different Web Elements  *
-	 *  and methods are used to get a hold of items and manipulate  *
-	 *  those items.                                                *
-	 *                                                              *
-	 ****************************************************************
+	 *******************************************************************
+	 *                                                                 *
+	 *  Programmer: Andrew McCormick                                   *
+	 *  Program:    HeroKuapp.java                                     *
+	 *  Package:    SeleniumExamples                                   *  
+	 *  Last Edit:  3.24.2021                                          *
+	 *                                                                 *
+	 *  This program uses herokaupp website to demonstrate multiple	   *  
+	 *  Selenium tools in action.  Multiple different Web Elements     *
+	 *  and methods are used to get a hold of items and manipulate     *
+	 *  those items.                                                   *
+	 *                                                                 *
+	 *******************************************************************
 	 */
 
 package SeleniumExamples;
@@ -34,7 +34,6 @@ public class Herokuapp
 	public static void main(String[] args) throws InterruptedException 
 	{
 		int pause = 1000; // Standard amount of time for Thread.sleep() statments
-		int temp;
 		
 		// Information to get Chrome WebDriver 
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\aj300\\Documents\\Selenium\\chromedriver.exe");
@@ -81,18 +80,18 @@ public class Herokuapp
 	}
 	
 	/*
-	 ****************************************************************************
-	 *                                                                          *
-	 *                      Method AddRemoveElements                            *
-	 *                                                                          *
-	 *	This method navigates to the Add/Remove Elements page on Herokuapp.     *
-	 *	This program uses a for loop and a xpath link to click on the           *
-	 *	addElement button four times.  The program then uses a four different	*	
-	 *	Selenium web elements to click the four delete buttons that appeared    *
-	 *	after clicking the addElement button four times.  The method then       * 
-	 *	navigates back to the main page of herokuapp.                           *
-	 *                                                                          *
-	 ****************************************************************************
+	 *******************************************************************************
+	 *                                                                             *
+	 *                      Method AddRemoveElements                               *
+	 *                                                                             *
+	 *	This method navigates to the Add/Remove Elements page on Herokuapp.        *
+	 *	This program uses a for loop and a xpath link to click on the              *
+	 *	addElement button four times.  The program then uses a four different	   *	
+	 *	Selenium web elements to click the four delete buttons that appeared       *
+	 *	after clicking the addElement button four times.  The method then          *  
+	 *	navigates back to the main page of herokuapp.                              *
+	 *                                                                             *
+	 *******************************************************************************
 	 */
 	
 	public static void AddRemoveElements(WebDriver driver, int pause) throws InterruptedException 
@@ -126,18 +125,18 @@ public class Herokuapp
 	}
 	
 	/*
-	 ****************************************************************************
-	 *                                                                          *
-	 *                         Method checkBoxes                                *
-	 *                                                                          *
-	 *	This method navigates to the Checkboxes page on Herokuapp.              *
-	 *	This program pulls all the checkboxes currently on the page and saves   *
-	 *  them to a list object.  It then goes through a for loop to see if the   *
-	 *  checkbox is checked by checking if its checked attribute is set to      *
-	 *  null.  If it is set to null, the program checks the box. The method     *
-	 *  then navigates back to the main page of herokuapp.                      *
-	 *                                                                          *
-	 ****************************************************************************
+	 *******************************************************************************
+	 *                                                                             *
+	 *                         Method checkBoxes                                   *
+	 *                                                                             *
+	 *	This method navigates to the Checkboxes page on Herokuapp.                 *
+	 *	This program pulls all the checkboxes currently on the page and saves      *
+	 *  them to a list object.  It then goes through a for loop to see if the      *
+	 *  checkbox is checked by checking if its checked attribute is set to         *
+	 *  null.  If it is set to null, the program checks the box. The method        *
+	 *  then navigates back to the main page of herokuapp.                         *
+	 *                                                                             *
+	 *******************************************************************************
 	 */
 	
 	public static void checkBoxes(WebDriver driver, int pause) throws InterruptedException 
@@ -166,25 +165,25 @@ public class Herokuapp
 	}
 	
 	/*
-	 ****************************************************************************
-	 *                                                                          *
-	 *                           Method formAuth                                *
-	 *                                                                          *
-	 *	This method navigates to the form authentication page on Herokuapp.     *
-	 *	This method first creates two string variables to save the username     *
-	 *  and password meant for a login.  The password is purposefully incorrect *
-	 *  at the start.  It also creates a boolean variable to run a loop that    *
-	 *  allows the username and password to be inputed again if wrong the first *
-	 *  time.  The method then enters the username, password, and clicks the    *
-	 *  submit button.  The flash message that appears on top of the screen     *
-	 *  regardless of sign-in fail or success is then printed to the console.  *
-	 *  The method then tries to press the logout button on the successful login *
-	 *  page.  A try-catch block is used to see if the the button can be found  *
-	 *  or not.  After the initial sign-in failure, the password is changed to  *
-	 *  the correct one and the sign-in is tried again.  This time it succeeds. *
-	 *  The method then navigates back to the main page of herokuapp.           *
-	 *                                                                          *
-	 ****************************************************************************
+	 *******************************************************************************
+	 *                                                                             *
+	 *                           Method formAuth                                   *
+	 *                                                                             *
+	 *	This method navigates to the form authentication page on Herokuapp.        *
+	 *	This method first creates two string variables to save the username        *
+	 *  and password meant for a login.  The password is purposefully incorrect    *
+	 *  at the start.  It also creates a boolean variable to run a loop that       *
+	 *  allows the username and password to be inputed again if wrong the first    *
+	 *  time.  The method then enters the username, password, and clicks the       *
+	 *  submit button.  The flash message that appears on top of the screen        *
+	 *  regardless of sign-in fail or success is then printed to the console.      *
+	 *  The method then tries to press the logout button on the successful login   *
+	 *  page.  A try-catch block is used to see if the the button can be found     *
+	 *  or not.  After the initial sign-in failure, the password is changed to     *
+	 *  the correct one and the sign-in is tried again.  This time it succeeds.    *
+	 *  The method then navigates back to the main page of herokuapp.              *
+	 *                                                                             *
+	 *******************************************************************************
 	 */
 	
 	public static void formAuth(WebDriver driver, int pause) throws InterruptedException 
@@ -240,20 +239,20 @@ public class Herokuapp
 	}
 	
 	/*
-	 ****************************************************************************
-	 *                                                                          *
-	 *                           Method dropDown                                *
-	 *                                                                          *
-	 *	This method navigates to the Dropdown page on Herokuapp.                *
-	 *	This method first saves the dropdown menu element to a variable to be   *
-	 *  be used multiple times.  The drop down bar is then clicked using an     *
-	 *  action object.  The two options in the dropdown menu are then located   *
-	 *  by using different methods and set to variables.  Option1 is then       *
-	 *  clicked using an action object.  The dropdown menu is then clicked      *
-	 *  again.  Option2 is then clicked using an action object.  The method     *
-	 *  then navigates back to the main page of herokuapp.                      *
-	 *                                                                          *
-	 ****************************************************************************
+	 *******************************************************************************
+	 *                                                                             *
+	 *                           Method dropDown                                   *
+	 *                                                                             *  
+	 *	This method navigates to the Dropdown page on Herokuapp.                   *
+	 *	This method first saves the dropdown menu element to a variable to be      *
+	 *  be used multiple times.  The drop down bar is then clicked using an        *
+	 *  action object.  The two options in the dropdown menu are then located      *
+	 *  by using different methods and set to variables.  Option1 is then          *
+	 *  clicked using an action object.  The dropdown menu is then clicked         *
+	 *  again.  Option2 is then clicked using an action object.  The method        *
+	 *  then navigates back to the main page of herokuapp.                         *
+	 *                                                                             *
+	 *******************************************************************************
 	 */
 	
 	public static void dropDown(WebDriver driver, Actions action, int pause) throws InterruptedException 
@@ -305,18 +304,18 @@ public class Herokuapp
 	}
 	
 	/*
-	 ****************************************************************************
-	 *                                                                          *
-	 *                         Method contextMenu                               *
-	 *                                                                          *
-	 *	This method navigates to the Context Menu page on Herokuapp.            *
-	 *	This program finds the box that needs to be right clicked with the ID   *
-	 *  Web Element.  It then uses an action object to right click the object   *
-	 *  which causes an alert box to appear.  The driver then switches to the   *
-	 *  alert box and uses the accept() method to check the ok button.  The     *
-	 *  method then navigates back to the main page of herokuapp.               *
-	 *                                                                          *
-	 ****************************************************************************
+	 *******************************************************************************
+	 *                                                                             *
+	 *                         Method contextMenu                                  *
+	 *                                                                             *
+	 *	This method navigates to the Context Menu page on Herokuapp.               *
+	 *	This program finds the box that needs to be right clicked with the ID      *
+	 *  Web Element.  It then uses an action object to right click the object      *
+	 *  which causes an alert box to appear.  The driver then switches to the      *
+	 *  alert box and uses the accept() method to check the ok button.  The        *
+	 *  method then navigates back to the main page of herokuapp.                  *
+	 *                                                                             *
+	 *******************************************************************************
 	 */
 	
 	public static void contextMenu(WebDriver driver, Actions action, int pause) throws InterruptedException 
@@ -355,6 +354,4 @@ public class Herokuapp
 			driver.navigate().back();
 		}
 	}
-	
-
 }
