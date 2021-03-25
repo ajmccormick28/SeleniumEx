@@ -34,6 +34,7 @@ public class Herokuapp
 	public static void main(String[] args) throws InterruptedException 
 	{
 		int pause = 1000; // Standard amount of time for Thread.sleep() statments
+		int temp;
 		
 		// Information to get Chrome WebDriver 
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\aj300\\Documents\\Selenium\\chromedriver.exe");
